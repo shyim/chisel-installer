@@ -1,6 +1,6 @@
 # Chisel Installer
 
-Installing Canonical Chisel into GitHub Actions
+Installing [Canonical Chisel](https://github.com/canonical/chisel) into GitHub Actions
 
 
 ## Usage
