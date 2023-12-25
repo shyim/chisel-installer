@@ -11,7 +11,7 @@ runs:
       shell: bash
       run: |
         cd /tmp
-        CHISEL_VERSION=$(curl https://api.github.com/repos/canonical/chisel/releases/latest | jq '.tag_name -r)
+        CHISEL_VERSION=$(curl https://api.github.com/repos/canonical/chisel/releases/latest | jq '.tag_name' -r)
         CHISEL_ARCH=$(dpkg --print-architecture)
         wget https://github.com/canonical/chisel/releases/download/${CHISEL_VERSION}/chisel_${CHISEL_VERSION}_linux_${CHISEL_ARCH}.tar.gz
         tar xfv chisel_${CHISEL_VERSION}_linux_${CHISEL_ARCH}.tar.gz
